@@ -19,11 +19,8 @@
       "settings": {
         "color_scheme": "background-1",
         "show_line_separator": true,
-        "show_social": false,
         "auto_rotate": false,
-        "change_slides_speed": 5,
-        "enable_country_selector": false,
-        "enable_language_selector": false
+        "change_slides_speed": 5
       }
     },
     "header": {
@@ -31,47 +28,21 @@
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
-        "menu_type_desktop": "dropdown",
+        "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
         "color_scheme": "background-1",
-        "menu_color_scheme": "background-1",
-        "enable_country_selector": true,
-        "enable_language_selector": true,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
         "mobile_logo_position": "center",
         "margin_bottom": 0,
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "47e09275-9873-462b-abda-9406fe857dd3": {
-      "type": "announcement-bar",
-      "blocks": {
-        "sections--16959725895896__47e09275-9873-462b-abda-9406fe857dd3-announcement-1": {
-          "type": "announcement",
-          "settings": {
-            "text": "Welcome to our store",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "sections--16959725895896__47e09275-9873-462b-abda-9406fe857dd3-announcement-1"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "show_line_separator": true,
-        "show_social": false,
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "enable_country_selector": false,
-        "enable_language_selector": false
-      }
     }
   },
   "order": [
     "announcement-bar",
-    "header",
-    "47e09275-9873-462b-abda-9406fe857dd3"
+    "header"
   ]
 }
