@@ -1,5 +1,50 @@
 {
   "sections": {
+    "c9282f5f-c78e-4345-bc90-1b1dc2acd2de": {
+      "type": "section-slider-products",
+      "blocks": {
+        "4f7a6d85-a710-4da0-bbf3-6dfc7f439594": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "the-3p-fulfilled-snowboard"
+          }
+        },
+        "fee122aa-311d-409c-8795-95786306cee2": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "the-collection-snowboard-oxygen"
+          }
+        },
+        "2937a25e-1ade-4070-abfc-ac2f78dd2a59": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "the-inventory-not-tracked-snowboard"
+          }
+        },
+        "c069fd9d-3c12-4373-ac3a-f860815e1da2": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "the-videographer-snowboard"
+          }
+        },
+        "a84a7152-461b-4cb2-a7e1-e6d42a2e7565": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "selling-plans-ski-wax"
+          }
+        }
+      },
+      "block_order": [
+        "4f7a6d85-a710-4da0-bbf3-6dfc7f439594",
+        "fee122aa-311d-409c-8795-95786306cee2",
+        "2937a25e-1ade-4070-abfc-ac2f78dd2a59",
+        "c069fd9d-3c12-4373-ac3a-f860815e1da2",
+        "a84a7152-461b-4cb2-a7e1-e6d42a2e7565"
+      ],
+      "settings": {
+        "slider_items": 3
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -69,6 +114,7 @@
     }
   },
   "order": [
+    "c9282f5f-c78e-4345-bc90-1b1dc2acd2de",
     "image_banner",
     "featured_collection"
   ]
