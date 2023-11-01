@@ -1,58 +1,20 @@
 {
   "sections": {
-    "c9282f5f-c78e-4345-bc90-1b1dc2acd2de": {
-      "type": "section-slider-products",
-      "blocks": {
-        "4f7a6d85-a710-4da0-bbf3-6dfc7f439594": {
-          "type": "product",
-          "settings": {
-            "proposal_product": "the-3p-fulfilled-snowboard"
-          }
-        },
-        "fee122aa-311d-409c-8795-95786306cee2": {
-          "type": "product",
-          "settings": {
-            "proposal_product": "the-collection-snowboard-oxygen"
-          }
-        },
-        "2937a25e-1ade-4070-abfc-ac2f78dd2a59": {
-          "type": "product",
-          "settings": {
-            "proposal_product": "the-inventory-not-tracked-snowboard"
-          }
-        },
-        "c069fd9d-3c12-4373-ac3a-f860815e1da2": {
-          "type": "product",
-          "settings": {
-            "proposal_product": "the-videographer-snowboard"
-          }
-        },
-        "a84a7152-461b-4cb2-a7e1-e6d42a2e7565": {
-          "type": "product",
-          "settings": {
-            "proposal_product": "selling-plans-ski-wax"
-          }
-        }
-      },
-      "block_order": [
-        "4f7a6d85-a710-4da0-bbf3-6dfc7f439594",
-        "fee122aa-311d-409c-8795-95786306cee2",
-        "2937a25e-1ade-4070-abfc-ac2f78dd2a59",
-        "c069fd9d-3c12-4373-ac3a-f860815e1da2",
-        "a84a7152-461b-4cb2-a7e1-e6d42a2e7565"
-      ],
-      "settings": {
-        "slider_items": 3
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "heading": "<em><strong>Find our latest products<\/strong><\/em>",
+            "heading_size": "h1"
+          }
+        },
+        "2dd6313b-82bd-4386-a3a3-77cb8d76c1ed": {
+          "type": "text",
+          "settings": {
+            "text": "Here you can buy different types of vapes",
+            "text_style": "body"
           }
         },
         "button": {
@@ -69,12 +31,14 @@
       },
       "block_order": [
         "heading",
+        "2dd6313b-82bd-4386-a3a3-77cb8d76c1ed",
         "button"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/Screenshot_2023-10-31_at_23.01.50.png",
         "image_overlay_opacity": 40,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "inverse",
@@ -84,8 +48,49 @@
         "show_text_below": false
       }
     },
+    "ee6a516c-47f3-47f3-9766-02684580a204": {
+      "type": "collection-list",
+      "blocks": {
+        "template--21555661046059__ee6a516c-47f3-47f3-9766-02684580a204-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "template--21555661046059__ee6a516c-47f3-47f3-9766-02684580a204-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "template--21555661046059__ee6a516c-47f3-47f3-9766-02684580a204-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21555661046059__ee6a516c-47f3-47f3-9766-02684580a204-featured_collection-1",
+        "template--21555661046059__ee6a516c-47f3-47f3-9766-02684580a204-featured_collection-2",
+        "template--21555661046059__ee6a516c-47f3-47f3-9766-02684580a204-featured_collection-3"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
@@ -111,11 +116,195 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "2612316b-cb2e-4281-9081-3cef1333e17b": {
+      "type": "multirow",
+      "blocks": {
+        "template--21555661046059__2612316b-cb2e-4281-9081-3cef1333e17b-row-1": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "template--21555661046059__2612316b-cb2e-4281-9081-3cef1333e17b-row-2": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "template--21555661046059__2612316b-cb2e-4281-9081-3cef1333e17b-row-3": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21555661046059__2612316b-cb2e-4281-9081-3cef1333e17b-row-1",
+        "template--21555661046059__2612316b-cb2e-4281-9081-3cef1333e17b-row-2",
+        "template--21555661046059__2612316b-cb2e-4281-9081-3cef1333e17b-row-3"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "bdf847bf-8cea-4cc8-8b3a-7b0f5bf48772": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screenshot_2023-10-31_at_23.45.38.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "073bfe9c-3d7d-4971-8b1a-9390557eff95": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--21555661046059__073bfe9c-3d7d-4971-8b1a-9390557eff95-collapsible_row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "<p>1231231<\/p>",
+            "page": ""
+          }
+        },
+        "template--21555661046059__073bfe9c-3d7d-4971-8b1a-9390557eff95-collapsible_row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--21555661046059__073bfe9c-3d7d-4971-8b1a-9390557eff95-collapsible_row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--21555661046059__073bfe9c-3d7d-4971-8b1a-9390557eff95-collapsible_row-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "8dd9906e-f50a-46dc-a753-02aab58b36d9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21555661046059__073bfe9c-3d7d-4971-8b1a-9390557eff95-collapsible_row-1",
+        "template--21555661046059__073bfe9c-3d7d-4971-8b1a-9390557eff95-collapsible_row-2",
+        "template--21555661046059__073bfe9c-3d7d-4971-8b1a-9390557eff95-collapsible_row-3",
+        "template--21555661046059__073bfe9c-3d7d-4971-8b1a-9390557eff95-collapsible_row-4",
+        "8dd9906e-f50a-46dc-a753-02aab58b36d9"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "8b1755bd-7e9a-4451-9dcd-aa3d1c6c8380": {
+      "type": "collage",
+      "blocks": {
+        "template--21555661046059__8b1755bd-7e9a-4451-9dcd-aa3d1c6c8380-image-1": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "template--21555661046059__8b1755bd-7e9a-4451-9dcd-aa3d1c6c8380-product-1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "template--21555661046059__8b1755bd-7e9a-4451-9dcd-aa3d1c6c8380-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21555661046059__8b1755bd-7e9a-4451-9dcd-aa3d1c6c8380-image-1",
+        "template--21555661046059__8b1755bd-7e9a-4451-9dcd-aa3d1c6c8380-product-1",
+        "template--21555661046059__8b1755bd-7e9a-4451-9dcd-aa3d1c6c8380-collection-1"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "c9282f5f-c78e-4345-bc90-1b1dc2acd2de",
     "image_banner",
-    "featured_collection"
+    "ee6a516c-47f3-47f3-9766-02684580a204",
+    "featured_collection",
+    "2612316b-cb2e-4281-9081-3cef1333e17b",
+    "bdf847bf-8cea-4cc8-8b3a-7b0f5bf48772",
+    "073bfe9c-3d7d-4971-8b1a-9390557eff95",
+    "8b1755bd-7e9a-4451-9dcd-aa3d1c6c8380"
   ]
 }
