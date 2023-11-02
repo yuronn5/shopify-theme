@@ -1,11 +1,61 @@
-$blue: yellow;
+$color-black: #000000;
 $margin: 13px;
 
 
 
-body {
-  background-color: $blue;
-  font-size: $margin;
-  margin: 0;
+
+
+//Link hover
+a {
+  text-decoration: none;
+
+  .header__active-menu-item {
+    text-decoration: none;
+
+    &:after {
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  span {
+    position: relative;
+
+    &:after {
+      background: none repeat scroll 0 0 $color-black;
+      bottom: -5px;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+  }
+
+  &:hover {
+    span:after {
+      width: 100%;
+      left: 0;
+    }
+  }
 }
 
+.header__menu-item {
+  &:hover {
+    span {
+      text-decoration: none;
+    }
+  }
+}
+
+.header__inline-menu {
+  header-menu {
+     .header__menu-item {
+       text-decoration: none !important;
+    }
+  }
+}
+
+//Link hover end

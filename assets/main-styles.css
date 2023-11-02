@@ -1,5 +1,36 @@
-body {
-  background-color: yellow;
-  font-size: 13px;
-  margin: 0;
+a {
+  text-decoration: none;
+}
+a .header__active-menu-item {
+  text-decoration: none;
+}
+a .header__active-menu-item:after {
+  left: 0;
+  width: 100%;
+}
+a span {
+  position: relative;
+}
+a span:after {
+  background: none repeat scroll 0 0 #000000;
+  bottom: -5px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover span:after {
+  width: 100%;
+  left: 0;
+}
+
+.header__menu-item:hover span {
+  text-decoration: none;
+}
+
+.header__inline-menu header-menu .header__menu-item {
+  text-decoration: none !important;
 }
