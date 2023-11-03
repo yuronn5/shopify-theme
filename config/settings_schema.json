@@ -1465,5 +1465,15 @@
         "default": "background-1"
       }
     ]
+  },
+  {
+    "name": "Minicart Empty Image",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "empty_cart_image",
+        "label": "Image bla"
+      }
+    ]
   }
 ]

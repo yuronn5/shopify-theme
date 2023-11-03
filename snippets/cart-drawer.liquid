@@ -51,6 +51,9 @@
                 </p>
               {%- endif -%}
             </div>
+            <div class="cart-drawer__empty-content-image">
+              <img src="{{ settings.empty_cart_image | img_url: '300x300' }}" alt="Empty Cart Image" />
+            </div>
           </div>
           {%- if settings.cart_drawer_collection != blank -%}
             <div class="cart-drawer__collection">
