@@ -2,7 +2,8 @@
 {{ 'slick-theme.css' | asset_url | stylesheet_tag }}
 {{ "slick-slider.css" | asset_url | stylesheet_tag }}
 
-<h1 class="slider-title">{{ section.settings.heading }}</h1>
+{% assign alignment_option = section.settings.text_alignment %}
+<h1 class="slider-title {{ alignment_option }}">{{ section.settings.heading }}</h1>
 <div class="customContainer">
   {% for block in  section.blocks %}
     <div class="slick__carousel--exterior">
@@ -109,6 +110,26 @@
       "id": "heading",
       "label": "Heading label",
       "default": "Default heading label"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
     }
   ],
   "blocks": [
