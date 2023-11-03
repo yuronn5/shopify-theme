@@ -2,7 +2,7 @@
 {{ 'slick-theme.css' | asset_url | stylesheet_tag }}
 {{ "slick-slider.css" | asset_url | stylesheet_tag }}
 
-<h1>{{ section.settings.heading }}</h1>
+<h1 class="slider-title">{{ section.settings.heading }}</h1>
 <div class="customContainer">
   {% for block in  section.blocks %}
     <div class="slick__carousel--exterior">
@@ -42,10 +42,10 @@
 <script>
   $('.customContainer').slick({
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024,
@@ -80,6 +80,7 @@
 {% schema %}
 {
   "name": "Slick slider products",
+  "class": "custom-slider",
   "settings": [
     {
       "type": "text",
@@ -109,6 +110,11 @@
           "id" : "description",
           "label" : "Description",
           "default" : "Description"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product to show"
         }
       ]
     }

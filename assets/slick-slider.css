@@ -1,3 +1,8 @@
+.custom-slider {
+    max-width: 1100px;
+    margin: auto;
+}
+
 .slick__carousel--header {
     margin-left: 1em;
 }
