@@ -1,16 +1,18 @@
 {{ 'slick.css' | asset_url | stylesheet_tag }}
 {{ 'slick-theme.css' | asset_url | stylesheet_tag }}
+{{ "slick-slider.css" | asset_url | stylesheet_tag }}
 
 <h1>{{ section.settings.heading }}</h1>
 <div class="customContainer">
   {% for block in  section.blocks %}
-    <div class="customContainer__slide">
-      <h2 class="customContainer__title">{{ block.settings.title }}</h2>
-      <div class="customContainer__image">
-        <img/>
+    <div class="slick__carousel--exterior">
+      <div class="slick__carousel--interior">
+        <div class="slick__carousel--quote">
+          <p>{{ block.settings.title }}</p>
+        </div>
+        <img class="slick__carousel--portrait" src="{{ block.settings.image | img_url: 'master' }}" />
+        <h4 class="slick__carousel--name">{{ block.settings.description }}</h4>
       </div>
-
-      <p>text abou</p>
     </div>
   {% endfor %}
 </div>
@@ -96,6 +98,17 @@
           "id": "title",
           "label": "Product Title",
           "default": "Default Title"
+        },
+        {
+          "type": "image_picker",
+          "id" : "image",
+          "label" :  "Image"
+        },
+        {
+          "type" : "text",
+          "id" : "description",
+          "label" : "Description",
+          "default" : "Description"
         }
       ]
     }
