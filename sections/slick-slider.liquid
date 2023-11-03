@@ -7,10 +7,27 @@
   {% for block in  section.blocks %}
     <div class="slick__carousel--exterior">
       <div class="slick__carousel--interior">
+
         <div class="slick__carousel--quote">
-          <p>{{ block.settings.title }}</p>
+          {% if block.settings.product.title %}
+            <p>{{ block.settings.product.title }}</p>
+          {% else %}
+            <p>{{ block.settings.title }}</p>
+          {% endif %}
         </div>
-        <img class="slick__carousel--portrait" src="{{ block.settings.image | img_url: 'master' }}" />
+
+        {% if block.settings.product.featured_image %}
+          {% comment %}if we set product render this{% endcomment %}
+          <img class="slick__carousel--portrait" src="{{ block.settings.product.featured_image | img_url: 'master' }}" />
+          <span class="product-price">{{ block.settings.product.price | money }}</span>
+          <a href="{{ block.settings.product.url  }}" class="product-link" target="_blank">
+            <button class="product-link-button">Go to Product</button>
+          </a>
+        {% else %}
+          {% comment %}if we dont set product to block{% endcomment %}
+          <img class="slick__carousel--portrait" src="{{ block.settings.image | img_url: 'master' }}" />
+        {% endif %}
+
         <h4 class="slick__carousel--name">{{ block.settings.description }}</h4>
       </div>
     </div>

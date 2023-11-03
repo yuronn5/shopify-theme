@@ -43,7 +43,26 @@
     padding-top: 3vw;
 }
 .slick__carousel--name {
-    text-align: center;
+    text-align: left;
+}
+.product-price {
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.product-link-button {
+    padding: 5px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+}
+
+.product-link-button:hover {
+    background: black;
+    color: white;
 }
 
 @media (min-width: 750px) {
@@ -52,6 +71,7 @@
     }
     .slick__carousel--interior {
         padding: 3vw;
+        min-height: 500px;
     }
     .slick__carousel--quotation {
         width: 4vw;
@@ -70,18 +90,20 @@
         padding: 2vw;
     }
     .slick__carousel--interior {
-        padding: 3vw;
+        padding: 2vw;
     }
     .slick__carousel--quotation {
         width: 3vw;
     }
     .slick__carousel--quote {
-        font-size: 1.5vw;
+        font-size: 16px;
     }
     .slick__carousel--portrait {
         width: 18vw;
+        max-width: 200px;
     }
     .slick__carousel--name {
-        font-size: 1.5vw;
+        font-size: 13px;
+
     }
 }
