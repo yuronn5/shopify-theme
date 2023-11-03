@@ -1,13 +1,15 @@
 <h1>{{ section.settings.heading }}</h1>
 <div class="customContainer">
-  <div class="customContainer__slide">
-    <h2 class="customContainer__title">pho</h2>
-    <div class="customContainer__image">
-      <img/>
-    </div>
+  {% for block in  section.blocks %}
+    <div class="customContainer__slide">
+      <h2 class="customContainer__title">{{ block.settings.title }}</h2>
+      <div class="customContainer__image">
+        <img/>
+      </div>
 
-    <p>text abou</p>
-  </div>
+      <p>text abou</p>
+    </div>
+  {% endfor %}
 </div>
 <style>
   .customContainer {
@@ -36,6 +38,20 @@
       "id": "heading",
       "label": "Heading label",
       "default": "Default heading label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "product-slide",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Product Title",
+          "default": "Default Title"
+        }
+      ]
     }
   ],
   "presets": [
