@@ -55,4 +55,12 @@ a {
     }
 }
 
+.header__icon--cart {
+    .cart-count-bubble {
+        span:after {
+            content: unset;
+        }
+    }
+}
+
 //Link hover end

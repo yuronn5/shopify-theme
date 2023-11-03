@@ -34,3 +34,7 @@ a:hover span:after {
 .header__inline-menu header-menu .header__menu-item {
   text-decoration: none !important;
 }
+
+.header__icon--cart .cart-count-bubble span:after {
+  content: unset;
+}
