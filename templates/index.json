@@ -297,6 +297,62 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "093a47f3-bd01-4433-9a62-026ba97eeae5": {
+      "type": "slick-slider",
+      "blocks": {
+        "c01771d9-e158-4775-a558-a47f58bd6f35": {
+          "type": "column",
+          "settings": {
+            "title": "Default Title 1",
+            "image": "shopify:\/\/shop_images\/11_004e2e1e-e448-41c3-b4f6-8bf6ce64ee10.webp",
+            "description": "Description 1",
+            "product": "the-3p-fulfilled-snowboard"
+          }
+        },
+        "5f8379bb-f5f6-4657-ada4-00e235c61431": {
+          "type": "column",
+          "settings": {
+            "title": "Default Title",
+            "description": "Description",
+            "product": "the-multi-managed-snowboard"
+          }
+        },
+        "db86784d-e85c-4854-818a-9e86d8c55f1e": {
+          "type": "column",
+          "settings": {
+            "title": "Default Title",
+            "description": "Description",
+            "product": ""
+          }
+        },
+        "710a4730-b665-44c6-9301-e037597bd696": {
+          "type": "column",
+          "settings": {
+            "title": "Default Title",
+            "description": "Description",
+            "product": ""
+          }
+        },
+        "7e5a8d1b-6b4e-4965-b9f7-77e49b37e718": {
+          "type": "column",
+          "settings": {
+            "title": "Default Title",
+            "description": "Description",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "c01771d9-e158-4775-a558-a47f58bd6f35",
+        "5f8379bb-f5f6-4657-ada4-00e235c61431",
+        "db86784d-e85c-4854-818a-9e86d8c55f1e",
+        "710a4730-b665-44c6-9301-e037597bd696",
+        "7e5a8d1b-6b4e-4965-b9f7-77e49b37e718"
+      ],
+      "settings": {
+        "heading": "You can pick our products now"
+      }
     }
   },
   "order": [
@@ -306,6 +362,7 @@
     "2612316b-cb2e-4281-9081-3cef1333e17b",
     "bdf847bf-8cea-4cc8-8b3a-7b0f5bf48772",
     "073bfe9c-3d7d-4971-8b1a-9390557eff95",
-    "8b1755bd-7e9a-4451-9dcd-aa3d1c6c8380"
+    "8b1755bd-7e9a-4451-9dcd-aa3d1c6c8380",
+    "093a47f3-bd01-4433-9a62-026ba97eeae5"
   ]
 }
