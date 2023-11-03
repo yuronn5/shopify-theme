@@ -1,4 +1,31 @@
 <h1>{{ section.settings.heading }}</h1>
+<div class="customContainer">
+  <div class="customContainer__slide">
+    <h2 class="customContainer__title">pho</h2>
+    <div class="customContainer__image">
+      <img/>
+    </div>
+
+    <p>text abou</p>
+  </div>
+</div>
+<style>
+  .customContainer {
+    display: flex;
+    padding: 1em;
+    gap: 1em;
+  }
+
+  .customContainer__slide {
+    padding: 1em;
+    box-shadow: 0px 10px 13px -7px #888686,
+    0px -1px 23px -3px rgba(125, 123, 123, 0.52);
+  }
+
+  .customContainer__image {
+    width: 10vw;
+  }
+</style>
 
 {% schema %}
 {
