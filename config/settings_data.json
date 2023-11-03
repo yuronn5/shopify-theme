@@ -118,6 +118,8 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "cart_color_scheme": "background-1",
+    "empty_cart_image": "shopify:\/\/shop_images\/cart-empty.png",
+    "image_with_text_image": "shopify:\/\/shop_images\/8.webp",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
