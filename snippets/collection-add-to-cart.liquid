@@ -1,0 +1,50 @@
+{% assign avaliable1 = product.avaliable %}
+<div class="collection-cart">
+    {% for variant in product.variants %}
+        <input type="hidden" id="variantgetid" value="{{ variant.id }}">
+    {% endfor %}
+    <button type="button" name="add" id="collection-cart-{{ product.id }}">
+        {% if product != blank  %}
+            Add to cart
+        {% else %}
+            Sold out
+        {% endif %}
+    </button>
+</div>
+
+<script>
+    $(document).on('click', '#collection-cart-{{ product.id }}', function () {
+        let getId = $(this).parents('.collection-cart').find('#variantgetid').val();
+        console.log(getId)
+
+        let formobj = {
+            quantity: 1,
+            id: getId
+        };
+        $.ajax({
+            type: 'POST',
+            url: '/cart/add.js',
+            cache: false,
+            data: formobj,
+            dataType: "json",
+            success: function(data) {
+                console.log("success");
+                $('.header__icon--cart .visually-hidden').click();
+                $('cart-drawer').removeClass('is-empty');
+                $('.drawer__inner-empty').hide();
+                $('cart-drawer').load(location.href + " #CartDrawer");
+                $('#cart-icon-bubble').load(location.href + " #cart-icon-bubble");
+            },
+            error: function(error) {
+                console.log('Error updating mini cart: ' + error);
+            }
+        });
+    })
+
+    $(document).on('click', function(event) {
+        // Check if the clicked element is not the box itself or a descendant of the box
+        if (!$(event.target).closest('cart-drawer .drawer__inner').length) {
+            $('cart-drawer').removeClass('active');
+        }
+    });
+</script>
