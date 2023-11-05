@@ -365,6 +365,14 @@
         "heading": "You can pick our products now",
         "text_alignment": "center"
       }
+    },
+    "298a977c-6a24-405b-b7f4-df9e9bf2f3fe": {
+      "type": "custom-subscriber-popup",
+      "settings": {
+        "logo": "shopify:\/\/shop_images\/cart-empty.png",
+        "heading": "Popup header title",
+        "paragraph": "Tell your customer why they should subscribe."
+      }
     }
   },
   "order": [
@@ -375,6 +383,7 @@
     "bdf847bf-8cea-4cc8-8b3a-7b0f5bf48772",
     "073bfe9c-3d7d-4971-8b1a-9390557eff95",
     "8b1755bd-7e9a-4451-9dcd-aa3d1c6c8380",
-    "093a47f3-bd01-4433-9a62-026ba97eeae5"
+    "093a47f3-bd01-4433-9a62-026ba97eeae5",
+    "298a977c-6a24-405b-b7f4-df9e9bf2f3fe"
   ]
 }
