@@ -54,34 +54,45 @@
         "template--21555661046059__ee6a516c-47f3-47f3-9766-02684580a204-featured_collection-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "accessories",
+            "collection_list_description": "Accessories collection description"
           }
         },
         "template--21555661046059__ee6a516c-47f3-47f3-9766-02684580a204-featured_collection-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "vapes",
+            "collection_list_description": "Devices collection description"
           }
         },
         "template--21555661046059__ee6a516c-47f3-47f3-9766-02684580a204-featured_collection-3": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "liquids",
+            "collection_list_description": "Liquid collection description"
+          }
+        },
+        "342ac4da-3669-459c-b36a-7385729995d5": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "with-discount",
+            "collection_list_description": ""
           }
         }
       },
       "block_order": [
         "template--21555661046059__ee6a516c-47f3-47f3-9766-02684580a204-featured_collection-1",
         "template--21555661046059__ee6a516c-47f3-47f3-9766-02684580a204-featured_collection-2",
-        "template--21555661046059__ee6a516c-47f3-47f3-9766-02684580a204-featured_collection-3"
+        "template--21555661046059__ee6a516c-47f3-47f3-9766-02684580a204-featured_collection-3",
+        "342ac4da-3669-459c-b36a-7385729995d5"
       ],
       "settings": {
-        "title": "Collections",
+        "title": "Collections List",
         "heading_size": "h1",
         "image_ratio": "square",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "color_scheme": "",
-        "show_view_all": false,
+        "show_view_all": true,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -351,7 +362,8 @@
         "7e5a8d1b-6b4e-4965-b9f7-77e49b37e718"
       ],
       "settings": {
-        "heading": "You can pick our products now"
+        "heading": "You can pick our products now",
+        "text_alignment": "center"
       }
     }
   },
