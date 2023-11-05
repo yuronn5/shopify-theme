@@ -30,6 +30,7 @@
         {% endif %}
 
         <h4 class="slick__carousel--name">{{ block.settings.description }}</h4>
+        {% render 'collection-add-to-cart', product: block.settings.product %}
       </div>
     </div>
   {% endfor %}
