@@ -1,5 +1,51 @@
 {
   "sections": {
+    "a62ff4bb-9948-4bdb-90ea-c66c14c8b93e": {
+      "type": "swiper-banner",
+      "blocks": {
+        "2a634d63-41c8-4aea-af33-b05395d561e1": {
+          "type": "column",
+          "settings": {
+            "slideText": "Accessories",
+            "link": "shopify:\/\/collections\/accessories"
+          }
+        },
+        "48ad41f4-a9aa-47d8-bb31-5ad904c4ccd0": {
+          "type": "column",
+          "settings": {
+            "slideText": "Devices",
+            "link": "shopify:\/\/collections\/vapes"
+          }
+        },
+        "741165ba-e28a-4a53-b86f-692b9305b2ef": {
+          "type": "column",
+          "settings": {
+            "slideText": "Liquid",
+            "link": "shopify:\/\/collections\/liquids"
+          }
+        },
+        "d05b5e45-9d7e-4523-b4e7-4487d799963f": {
+          "type": "column",
+          "settings": {
+            "slideText": "Without discount",
+            "link": "shopify:\/\/collections\/without-discount"
+          }
+        }
+      },
+      "block_order": [
+        "2a634d63-41c8-4aea-af33-b05395d561e1",
+        "48ad41f4-a9aa-47d8-bb31-5ad904c4ccd0",
+        "741165ba-e28a-4a53-b86f-692b9305b2ef",
+        "d05b5e45-9d7e-4523-b4e7-4487d799963f"
+      ],
+      "settings": {
+        "background": "color",
+        "background_color": "#802a2a",
+        "banner_heading": "Banner Heading",
+        "header_font": "alegreya_n4",
+        "links_font": "helvetica_n4"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -376,6 +422,7 @@
     }
   },
   "order": [
+    "a62ff4bb-9948-4bdb-90ea-c66c14c8b93e",
     "image_banner",
     "ee6a516c-47f3-47f3-9766-02684580a204",
     "featured_collection",

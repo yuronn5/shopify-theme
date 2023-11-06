@@ -1,0 +1,162 @@
+{{ "swiper-bundle.min.css" | asset_url | stylesheet_tag }}
+{{ "swiper-banner.css" | asset_url | stylesheet_tag }}
+{% assign header_font = section.settings.header_font  %}
+{% assign links_font = section.settings.links_font  %}
+
+{% assign links = section.blocks.size  %}
+{% case links %}
+{% when 1 %}
+{% assign size = '4em' %}
+{% when 2 %}
+{% assign size = '3.2em' %}
+{% when 3 %}
+{% assign size = '2.8em' %}
+{% when 4 %}
+{% assign size = '2.4em' %}
+{% else %}
+{% assign size = '2.4em' %}
+{% endcase %}
+
+
+<section class="mc__banner--top">
+    
+    {% if section.settings.background == 'color' %}
+    <div class="swiper__bannerBackground">
+    
+    </div>
+  {% elsif section.settings.background == 'image' %}
+  <picture class="mc__swiper--background" alt="background image">
+    <source srcset="{{ section.settings.desktop_image | img_url: 'master'}}" media="(min-width: 641px)" />
+    <img src="{{ section.settings.mobile_image | img_url: 'master'}}" alt="background image" />
+  </picture>
+  {% else %}
+    Error
+  {% endif %}
+    <p>{{ section.settings.banner_heading }}</p>
+    <div class="mc__slideshowContainer">
+      <!-- Slider main container -->
+      <div class="swiper_banner">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          {%- for block in section.blocks -%}
+            <div class="swiper-slide mc__bannerSlide">
+                <a class="mc__bannerLink" href="{{ block.settings.link }}">{{ block.settings.slideText}}</a>
+              </div>
+          {% endfor %}
+        </div>
+        <div class="swiper-button-prev lg-only"></div>
+        <div class="swiper-button-next lg-only"></div>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </section>
+
+{{ 'swiper-bundle.min.js' | asset_url | script_tag }}
+{{ 'swiper-banner.js' | asset_url | script_tag }}
+
+{% style %}
+  {{ header_font | font_face }}
+  {{ links_font | font_face }} 
+  .swiper__bannerBackground {
+  background-color: {{ section.settings.background_color }};
+  }
+  
+  .mc__banner--top p {
+    font-family: {{ header_font.family }};
+  }
+  .mc__bannerLink {
+    font-family: {{ links_font.family }};
+  }
+  .mc__bannerSlide {
+  font-size: {{ size }};
+  }
+{% endstyle %}
+{% schema %}
+{
+    "name": "swiper banner",
+    "settings": [
+      {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop Image",
+      "info": "Image that will be shown on large screens"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image",
+      "info": "Image that will be shown on small screens"
+    },
+    {
+      "type": "select",
+      "id": "background",
+      "label": "Background",
+      "options": [
+        {
+          "value": "image",
+          "label": "image"
+        },
+        {
+          "value": "color",
+          "label": "color"
+        }
+      ],
+      "default": "color",
+      "info": "Choose an image, or background color"
+    },
+      {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#808080"
+    },
+    {
+      "type": "text",
+      "id": "banner_heading",
+      "label": "Banner Heading",
+      "default": "Banner Heading",
+      "info": "Leave blank if no header is desired "
+    },
+      {
+      "type": "font_picker",
+      "id": "header_font",
+      "label": "Header Font",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "font_picker",
+      "id": "links_font",
+      "label": "Links Font",
+      "default": "helvetica_n4"
+    }
+    ],
+    "blocks" : [
+      {
+        "type" : "column",
+        "name" : "slide",
+        "limit": 4,
+        "settings" : [
+          {
+            "type": "text",
+            "id": "slideText",
+            "label": "Slider Text",
+            "default": "Slide Label",
+            "info": "Place slide label her"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Swiper Banner"
+      }
+    ]
+  }
+{% endschema %}
