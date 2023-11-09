@@ -72,13 +72,23 @@
           >
             {%- assign placeholder_image_index = forloop.index0 | modulo: 4 | plus: 1 -%}
             {%- assign placeholder_image = 'collection-apparel-' | append: placeholder_image_index -%}
-            {% render 'card-homepage-collection',
-              card_collection: block.settings.collection,
-              card_collection_descr: block.settings.collection_list_description,
-              media_aspect_ratio: section.settings.image_ratio,
-              columns: columns,
-              placeholder_image: placeholder_image
-            %}
+            {% if template == 'index' %}
+              {% render 'card-homepage-collection',
+                      card_collection: block.settings.collection,
+                      card_collection_descr: block.settings.collection_list_description,
+                      media_aspect_ratio: section.settings.image_ratio,
+                      columns: columns,
+                      placeholder_image: placeholder_image
+              %}
+            {% else %}
+              {% render 'card-collection',
+                      card_collection: block.settings.collection,
+                      card_collection_descr: block.settings.collection_list_description,
+                      media_aspect_ratio: section.settings.image_ratio,
+                      columns: columns,
+                      placeholder_image: placeholder_image
+              %}
+            {% endif %}
           </li>
         {%- endfor -%}
       </ul>
