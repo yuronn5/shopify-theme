@@ -48,6 +48,15 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "6650469b-d923-4f84-b521-d98d68f3159f": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "MY Metafield colapsible",
+            "icon": "dryer",
+            "content": "<p>{{ product.metafields.custom.ingredience_by_yurii | metafield_tag }}<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -58,7 +67,8 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "6650469b-d923-4f84-b521-d98d68f3159f"
       ],
       "settings": {
         "enable_sticky_info": true,
